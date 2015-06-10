@@ -6,7 +6,7 @@ package examples;
 public class ConcurrPrint {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            new Thread("Thread"+i){
+            new Thread("Thread" + i) {
                 @Override
                 public void run() {
                     System.out.println(Thread.currentThread().getName());
